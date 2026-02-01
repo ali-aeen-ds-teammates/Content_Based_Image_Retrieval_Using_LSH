@@ -26,6 +26,7 @@ __pycache__/
 env/
 venv/
 ENV/
+python/data/256_ObjectCategories
 .pytest_cache/
 .ipynb_checkpoints/
 # Ignore generated performance reports
