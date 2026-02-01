@@ -1,26 +1,22 @@
-//
-// Created by aeen on 12/23/25.
-//
 #include "lsh/VectorDB.h"
 #include <fstream>
 #include <cmath>
-#include <iostream>
 #include <algorithm>
-#include <numeric>
 #include <random>
+#include <set>
+#include <queue>
 
-VectorDB::VectorDB(int input_dim, int num_hash_tables, int hash_size) : dim(input_dim), num_tables(num_hash_tables), num_bits(hash_size)
-{
+VectorDB::VectorDB(int input_dim, int num_hash_tables, int hash_size)
+    : dim(input_dim), num_tables(num_hash_tables), num_bits(hash_size) {
     generate_hyperplanes();
     hash_tables.resize(num_tables);
 }
 
 void VectorDB::generate_hyperplanes() {
-    std::mt19937 rng(42); // fixed seed for reproducibility
+    std::mt19937 rng(42);
     std::normal_distribution<float> dist(0.0, 1.0);
-
     planes.resize(num_tables);
-    for (int i = 0; i < num_tables; i++){
+    for (int i = 0; i < num_tables; i++) {
         planes[i].resize(num_bits);
         for (int j = 0; j < num_bits; j++) {
             planes[i][j].resize(dim);
@@ -31,6 +27,17 @@ void VectorDB::generate_hyperplanes() {
     }
 }
 
+float VectorDB::cosine_similarity(const std::vector<float>& a, const std::vector<float>& b) {
+    float dot = 0.0f, norm_a = 0.0f, norm_b = 0.0f;
+    for (int i = 0; i < dim; ++i) {
+        dot += a[i] * b[i];
+        norm_a += a[i] * a[i];
+        norm_b += b[i] * b[i];
+    }
+    if (norm_a == 0 || norm_b == 0) return 0.0f;
+    return dot / (std::sqrt(norm_a) * std::sqrt(norm_b));
+}
+
 uint32_t VectorDB::hash_vector(const std::vector<float> &vec, int table_idx) {
     uint32_t hash = 0;
     for (int i = 0; i < num_bits; i++) {
@@ -38,95 +45,94 @@ uint32_t VectorDB::hash_vector(const std::vector<float> &vec, int table_idx) {
         for (int d = 0; d < dim; d++) {
             dot += vec[d] * planes[table_idx][i][d];
         }
-        if (dot > 0) hash |= (1 << i);
+        if (dot > 0) hash |= (1u << i);
     }
     return hash;
 }
 
 void VectorDB::insert(int id, const std::vector<float> &vec) {
-    if (vec.size() != dim) throw std::runtime_error("Dimension mismatch!");
-
-    // Store Data
+    std::lock_guard<std::mutex> lock(db_mutex);
     storage[id] = {id, vec};
-
-    // Index Data (LSH)
     for (int i = 0; i < num_tables; i++) {
-        uint32_t hash = hash_vector(vec, i);
-        hash_tables[i][hash].push_back(id);
+        uint32_t hv = hash_vector(vec, i);
+        hash_tables[i][hv].push_back(id);
     }
 }
 
-float VectorDB::cosine_dist(const std::vector<float> &a, const std::vector<float> &b) {
-    float dot = 0, norm_a = 0, norm_b = 0;
-    for (size_t i = 0; i < a.size(); i++) {
-        dot += a[i] * b[i];
-        norm_a += a[i] * a[i];
-        norm_b += b[i] * b[i];
+std::vector<int> VectorDB::exact_query(const std::vector<float>& query_vec, int k) {
+    std::lock_guard<std::mutex> lock(db_mutex);
+    std::priority_queue<std::pair<float, int>> pq;
+    for (const auto& [id, record] : storage) {
+        pq.push({cosine_similarity(query_vec, record.data), id});
     }
-    return 1.0f - (dot / std::sqrt(norm_a) * std::sqrt(norm_b));
+    std::vector<int> results;
+    for (int i = 0; i < k && !pq.empty(); i++) {
+        results.push_back(pq.top().second);
+        pq.pop();
+    }
+    return results;
 }
 
-std::vector<int> VectorDB::query(const std::vector<float> &query_vec, int k) {
-    std::unordered_map<int, bool> candidates;
-
-    // Collect candidates from buckets (LSH)
-    for (int i = 0; i < num_tables; i++){
-        uint32_t hash = hash_vector(query_vec, i);
-        if (hash_tables[i].count(hash)) {
-            for(int id : hash_tables[i][hash]) {
-                candidates[id] = true;
-            }
+std::vector<int> VectorDB::query(const std::vector<float>& query_vec, int k) {
+    std::lock_guard<std::mutex> lock(db_mutex);
+    std::set<int> candidates;
+    for (int i = 0; i < num_tables; i++) {
+        uint32_t hv = hash_vector(query_vec, i);
+        if (hash_tables[i].count(hv)) {
+            for (int id : hash_tables[i][hv]) candidates.insert(id);
         }
     }
-
-    // Exact Search on candidates (Reranking)
-    std::vector<std::pair<float, int>> results;
-    for (auto const& [id, _] : candidates) {
-        float dist = cosine_dist(query_vec, storage[id].data);
-        results.push_back({dist, id});
+    std::priority_queue<std::pair<float, int>> pq;
+    for (int id : candidates) {
+        pq.push({cosine_similarity(query_vec, storage[id].data), id});
     }
-
-    // Sort and return top K
-    std::sort(results.begin(), results.end());
-
-    std::vector<int> final_ids;
-    for (int i = 0; i < std::min((int)results.size(), k); i++) {
-        final_ids.push_back(results[i].second);
+    std::vector<int> results;
+    for (int i = 0; i < k && !pq.empty(); i++) {
+        results.push_back(pq.top().second);
+        pq.pop();
     }
-
-    return final_ids;
+    return results;
 }
 
-void VectorDB::save_to_disk(const std::string &filename) {
+void VectorDB::save_to_disk(const std::string& filename) {
+    std::lock_guard<std::mutex> lock(db_mutex);
     std::ofstream out(filename, std::ios::binary);
-    size_t size = storage.size();
-    out.write((char*)&size, sizeof(size));
-
-    for(auto const& [id, record] : storage) {
-        out.write((char*)&record.id, sizeof(record.id));
-        out.write((char*)record.data.data(), dim * sizeof(float));
+    if (!out) return;
+    out.write(reinterpret_cast<const char*>(&dim), sizeof(int));
+    uint64_t size = storage.size();
+    out.write(reinterpret_cast<const char*>(&size), sizeof(uint64_t));
+    for (const auto& [id, record] : storage) {
+        out.write(reinterpret_cast<const char*>(&id), sizeof(int));
+        out.write(reinterpret_cast<const char*>(record.data.data()), dim * sizeof(float));
     }
-    out.close();
 }
 
-void VectorDB::load_from_disk(const std::string &filename) {
+void VectorDB::load_from_disk(const std::string& filename) {
+    std::lock_guard<std::mutex> lock(db_mutex);
     std::ifstream in(filename, std::ios::binary);
-    if(!in.is_open()) return;
-
-    size_t size;
-    in.read((char*)&size, sizeof(size));
-
+    if (!in) return;
     storage.clear();
-    // Rebuild hash tables
     for (auto& t : hash_tables) t.clear();
-
-    for (size_t i = 0; i < size; i++) {
+    int file_dim;
+    uint64_t count;
+    in.read(reinterpret_cast<char*>(&file_dim), sizeof(int));
+    in.read(reinterpret_cast<char*>(&count), sizeof(uint64_t));
+    for (uint64_t i = 0; i < count; i++) {
         int id;
-        std::vector<float> vec(dim);
-        in.read((char*)&id, sizeof(id));
-        in.read((char*)vec.data(), dim * sizeof(float));
-
-        insert(id, vec); // Re-insert to rebuild index in memory
+        std::vector<float> vec(file_dim);
+        in.read(reinterpret_cast<char*>(&id), sizeof(int));
+        in.read(reinterpret_cast<char*>(vec.data()), file_dim * sizeof(float));
+        // Manual internal insert to avoid double locking
+        storage[id] = {id, vec};
+        for (int t = 0; t < num_tables; t++) {
+            hash_tables[t][hash_vector(vec, t)].push_back(id);
+        }
     }
-    in.close();
+}
+
+std::unordered_map<int, std::vector<float>> VectorDB::get_all_vectors() {
+    std::lock_guard<std::mutex> lock(db_mutex);
+    std::unordered_map<int, std::vector<float>> result;
+    for (const auto& [id, rec] : storage) result[id] = rec.data;
+    return result;
 }
