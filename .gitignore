@@ -27,6 +27,9 @@ env/
 venv/
 ENV/
 python/data/
+python/data/vectors.bin
+python/data/metadata.json
+python/data/256_ObjectCategories/*
 python/lsh_core.cp313-win_amd64.pyd
 .pytest_cache/
 .ipynb_checkpoints/
