@@ -47,3 +47,11 @@ async def compare(file: UploadFile = File(...)):
         "lsh": {"results": get_results(lsh_ids), "time_ms": t_lsh},
         "exact": {"results": get_results(exact_ids), "time_ms": t_exact}
     }
+@app.get("/debug/db_size")
+def get_db_size():
+    all_vectors = db.get_all()
+    return {
+        "vector_count": len(all_vectors),
+        "metadata_count": len(metadata),
+        "is_empty": len(all_vectors) == 0
+    }
