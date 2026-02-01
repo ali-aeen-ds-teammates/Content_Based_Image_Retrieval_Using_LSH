@@ -26,7 +26,8 @@ __pycache__/
 env/
 venv/
 ENV/
-python/data/256_ObjectCategories
+python/data/
+python/lsh_core.cp313-win_amd64.pyd
 .pytest_cache/
 .ipynb_checkpoints/
 # Ignore generated performance reports
