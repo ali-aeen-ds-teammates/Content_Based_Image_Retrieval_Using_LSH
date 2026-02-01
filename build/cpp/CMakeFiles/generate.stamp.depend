@@ -1,0 +1,17 @@
+# CMake generation dependency list for this directory.
+C:/Users/arya/AppData/Roaming/Python/Python313/site-packages/pybind11/share/cmake/pybind11/FindPythonLibsNew.cmake
+C:/Users/arya/AppData/Roaming/Python/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake
+C:/Users/arya/AppData/Roaming/Python/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake
+C:/Users/arya/AppData/Roaming/Python/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11ConfigVersion.cmake
+C:/Users/arya/AppData/Roaming/Python/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Targets.cmake
+C:/Users/arya/AppData/Roaming/Python/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Tools.cmake
+C:/Users/arya/Desktop/DS_project/cpp/CMakeLists.txt
+F:/cmake/share/cmake-4.1/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+F:/cmake/share/cmake-4.1/Modules/CheckCXXCompilerFlag.cmake
+F:/cmake/share/cmake-4.1/Modules/CheckCXXSourceCompiles.cmake
+F:/cmake/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake
+F:/cmake/share/cmake-4.1/Modules/FindPackageMessage.cmake
+F:/cmake/share/cmake-4.1/Modules/FindPythonInterp.cmake
+F:/cmake/share/cmake-4.1/Modules/Internal/CheckCompilerFlag.cmake
+F:/cmake/share/cmake-4.1/Modules/Internal/CheckFlagCommonConfig.cmake
+F:/cmake/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake

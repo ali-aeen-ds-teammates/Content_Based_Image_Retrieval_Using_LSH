@@ -9,8 +9,10 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   const fetchViz = async () => {
-    const res = await axios.get(`${API_URL}/visualize`);
-    setViz(res.data.plot_base64);
+    try {
+      const res = await axios.get(`${API_URL}/visualize`);
+      setViz(res.data.plot_base64);
+    } catch (e) { console.error("Viz failed", e); }
   };
 
   useEffect(() => { fetchViz(); }, []);
@@ -26,52 +28,63 @@ function App() {
     try {
       const res = await axios.post(`${API_URL}/search/compare`, formData);
       setResults(res.data);
-      fetchViz(); // Update plot in case data changed
+      fetchViz();
     } catch (err) {
-      alert("Backend not running or Error processing image");
+      alert("Backend Error: Make sure uvicorn is running on port 8000");
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'sans-serif', backgroundColor: '#f0f2f5', minHeight: '100vh' }}>
-      <header style={{ borderBottom: '2px solid #ddd', marginBottom: '20px' }}>
-        <h1>SBU Content-Based Image Retrieval</h1>
-        <p>LSH Indexing vs Brute Force Search</p>
-      </header>
+    <div style={{ padding: '40px', maxWidth: '1200px', margin: '0 auto', fontFamily: 'system-ui' }}>
+      <h1 style={{ color: '#2d3748' }}>SBU Content-Based Image Retrieval</h1>
+      <p>Data Structures & Algorithms Final Project - Fall 2025</p>
+      <hr />
 
-      <div style={{ display: 'flex', gap: '20px' }}>
-        <div style={{ flex: 1, background: 'white', padding: '20px', borderRadius: '8px shadow' }}>
-          <h3>1. Query Image</h3>
-          <input type="file" onChange={handleSearch} />
-          {loading && <p style={{ color: 'blue' }}>Analyzing Image...</p>}
-
-          <div style={{ marginTop: '40px' }}>
-            <h3>3. Vector Space Visualization</h3>
-            {viz ? <img src={`data:image/png;base64,${viz}`} style={{ width: '100%' }} /> : "Loading Plot..."}
+      <div style={{ display: 'flex', gap: '40px', marginTop: '20px' }}>
+        <div style={{ flex: '1' }}>
+          <h2>1. Upload Image</h2>
+          <input type="file" onChange={handleSearch} style={{ marginBottom: '20px' }} />
+          {loading && <p style={{ color: '#3182ce' }}>Processing Vectors...</p>}
+          
+          <div style={{ marginTop: '30px', padding: '20px', background: '#f7fafc', borderRadius: '8px' }}>
+            <h3>Vector Space Visualization (PCA)</h3>
+            {viz ? <img src={`data:image/png;base64,${viz}`} style={{ width: '100%', borderRadius: '4px' }} /> : "Loading space..."}
           </div>
         </div>
 
-        <div style={{ flex: 1, background: 'white', padding: '20px', borderRadius: '8px' }}>
-          <h3>2. Search Results</h3>
-          {results ? (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              <div style={{ border: '1px solid #90cdf4', padding: '10px', borderRadius: '5px' }}>
-                <h4 style={{ color: '#2b6cb0' }}>LSH (Approximate): {results.lsh.time_ms.toFixed(2)}ms</h4>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
-                  {results.lsh.results.map(id => <div key={id} style={{ background: '#ebf8ff', padding: '10px' }}>ID: {id}</div>)}
+        <div style={{ flex: '2' }}>
+          <h2>2. Search Results</h2>
+          {!results && <p style={{ color: '#a0aec0' }}>Waiting for query...</p>}
+          
+          {results && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
+              <div style={{ borderLeft: '4px solid #3182ce', paddingLeft: '15px' }}>
+                <h3 style={{ color: '#2b6cb0' }}>LSH Approximate (Sub-linear): {results.lsh.time_ms.toFixed(2)}ms</h3>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(100px, 1fr))', gap: '10px' }}>
+                  {results.lsh.results.map(item => (
+                    <div key={item.id}>
+                      <img src={`${API_URL}/images/${item.path}`} style={{ width: '100px', height: '100px', objectFit: 'cover', borderRadius: '4px' }} />
+                      <span style={{ fontSize: '10px' }}>ID: {item.id}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
 
-              <div style={{ border: '1px solid #9ae6b4', padding: '10px', borderRadius: '5px' }}>
-                <h4 style={{ color: '#2f855a' }}>Brute Force (Exact): {results.exact.time_ms.toFixed(2)}ms</h4>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
-                  {results.exact.results.map(id => <div key={id} style={{ background: '#f0fff4', padding: '10px' }}>ID: {id}</div>)}
+              <div style={{ borderLeft: '4px solid #38a169', paddingLeft: '15px' }}>
+                <h3 style={{ color: '#2f855a' }}>Brute Force Exact (Linear): {results.exact.time_ms.toFixed(2)}ms</h3>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(100px, 1fr))', gap: '10px' }}>
+                  {results.exact.results.map(item => (
+                    <div key={item.id}>
+                      <img src={`${API_URL}/images/${item.path}`} style={{ width: '100px', height: '100px', objectFit: 'cover', borderRadius: '4px' }} />
+                      <span style={{ fontSize: '10px' }}>ID: {item.id}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
-          ) : <p>Upload an image to start search.</p>}
+          )}
         </div>
       </div>
     </div>

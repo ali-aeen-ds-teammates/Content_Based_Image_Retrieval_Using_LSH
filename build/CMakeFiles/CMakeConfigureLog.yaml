@@ -110,7 +110,7 @@ events:
       The output was:
       0
       MSBuild version 17.12.6+db5f6012c for .NET Framework
-      Build started 2/1/2026 1:02:15 AM.
+      Build started 2/1/2026 1:10:50 AM.
       
       Project "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -139,7 +139,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.50
+      Time Elapsed 00:00:00.43
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -1135,7 +1135,7 @@ events:
       The output was:
       0
       MSBuild version 17.12.6+db5f6012c for .NET Framework
-      Build started 2/1/2026 1:02:17 AM.
+      Build started 2/1/2026 1:10:51 AM.
       
       Project "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -1164,7 +1164,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.48
+      Time Elapsed 00:00:00.41
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -1740,8 +1740,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-x6dg8i"
-      binary: "C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-x6dg8i"
+      source: "C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-4ipqck"
+      binary: "C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-4ipqck"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od"
@@ -1750,40 +1750,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-x6dg8i'
+        Change Dir: 'C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-4ipqck'
         
-        Run Build Command(s): F:/vsc/product/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_0967e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): F:/vsc/product/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_a12d4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.12.6+db5f6012c for .NET Framework
-        Build started 2/1/2026 1:02:18 AM.
+        Build started 2/1/2026 1:10:51 AM.
         
-        Project "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x6dg8i\\cmTC_0967e.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4ipqck\\cmTC_a12d4.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_0967e.dir\\Debug\\".
+          Creating directory "cmTC_a12d4.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x6dg8i\\Debug\\".
-          Creating directory "cmTC_0967e.dir\\Debug\\cmTC_0967e.tlog\\".
+          Creating directory "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4ipqck\\Debug\\".
+          Creating directory "cmTC_a12d4.dir\\Debug\\cmTC_a12d4.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_0967e.dir\\Debug\\cmTC_0967e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_0967e.dir\\Debug\\cmTC_0967e.tlog\\unsuccessfulbuild".
+          Creating "cmTC_a12d4.dir\\Debug\\cmTC_a12d4.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_a12d4.dir\\Debug\\cmTC_a12d4.tlog\\unsuccessfulbuild".
         ClCompile:
-          F:\\vsc\\product\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_0967e.dir\\Debug\\\\" /Fd"cmTC_0967e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "F:\\cmake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          F:\\vsc\\product\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_a12d4.dir\\Debug\\\\" /Fd"cmTC_a12d4.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "F:\\cmake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_0967e.dir\\Debug\\\\" /Fd"cmTC_0967e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "F:\\cmake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_a12d4.dir\\Debug\\\\" /Fd"cmTC_a12d4.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "F:\\cmake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          F:\\vsc\\product\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x6dg8i\\Debug\\cmTC_0967e.exe" /INCREMENTAL /ILK:"cmTC_0967e.dir\\Debug\\cmTC_0967e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-x6dg8i/Debug/cmTC_0967e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-x6dg8i/Debug/cmTC_0967e.lib" /MACHINE:X64  /machine:x64 cmTC_0967e.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_0967e.vcxproj -> C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x6dg8i\\Debug\\cmTC_0967e.exe
+          F:\\vsc\\product\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4ipqck\\Debug\\cmTC_a12d4.exe" /INCREMENTAL /ILK:"cmTC_a12d4.dir\\Debug\\cmTC_a12d4.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-4ipqck/Debug/cmTC_a12d4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-4ipqck/Debug/cmTC_a12d4.lib" /MACHINE:X64  /machine:x64 cmTC_a12d4.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_a12d4.vcxproj -> C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4ipqck\\Debug\\cmTC_a12d4.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_0967e.dir\\Debug\\cmTC_0967e.tlog\\unsuccessfulbuild".
-          Touching "cmTC_0967e.dir\\Debug\\cmTC_0967e.tlog\\cmTC_0967e.lastbuildstate".
-        Done Building Project "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x6dg8i\\cmTC_0967e.vcxproj" (default targets).
+          Deleting file "cmTC_a12d4.dir\\Debug\\cmTC_a12d4.tlog\\unsuccessfulbuild".
+          Touching "cmTC_a12d4.dir\\Debug\\cmTC_a12d4.tlog\\cmTC_a12d4.lastbuildstate".
+        Done Building Project "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4ipqck\\cmTC_a12d4.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.46
+        Time Elapsed 00:00:00.43
         
       exitCode: 0
   -
@@ -1823,8 +1823,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-ziqj16"
-      binary: "C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-ziqj16"
+      source: "C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-5py5ge"
+      binary: "C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-5py5ge"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od"
@@ -1834,40 +1834,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-ziqj16'
+        Change Dir: 'C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-5py5ge'
         
-        Run Build Command(s): F:/vsc/product/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_1afe0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): F:/vsc/product/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_461dc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.12.6+db5f6012c for .NET Framework
-        Build started 2/1/2026 1:02:19 AM.
+        Build started 2/1/2026 1:10:52 AM.
         
-        Project "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ziqj16\\cmTC_1afe0.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5py5ge\\cmTC_461dc.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_1afe0.dir\\Debug\\".
+          Creating directory "cmTC_461dc.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ziqj16\\Debug\\".
-          Creating directory "cmTC_1afe0.dir\\Debug\\cmTC_1afe0.tlog\\".
+          Creating directory "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5py5ge\\Debug\\".
+          Creating directory "cmTC_461dc.dir\\Debug\\cmTC_461dc.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_1afe0.dir\\Debug\\cmTC_1afe0.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_1afe0.dir\\Debug\\cmTC_1afe0.tlog\\unsuccessfulbuild".
+          Creating "cmTC_461dc.dir\\Debug\\cmTC_461dc.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_461dc.dir\\Debug\\cmTC_461dc.tlog\\unsuccessfulbuild".
         ClCompile:
-          F:\\vsc\\product\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Fo"cmTC_1afe0.dir\\Debug\\\\" /Fd"cmTC_1afe0.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "F:\\cmake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          F:\\vsc\\product\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Fo"cmTC_461dc.dir\\Debug\\\\" /Fd"cmTC_461dc.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "F:\\cmake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Fo"cmTC_1afe0.dir\\Debug\\\\" /Fd"cmTC_1afe0.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "F:\\cmake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Fo"cmTC_461dc.dir\\Debug\\\\" /Fd"cmTC_461dc.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "F:\\cmake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          F:\\vsc\\product\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ziqj16\\Debug\\cmTC_1afe0.exe" /INCREMENTAL /ILK:"cmTC_1afe0.dir\\Debug\\cmTC_1afe0.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-ziqj16/Debug/cmTC_1afe0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-ziqj16/Debug/cmTC_1afe0.lib" /MACHINE:X64  /machine:x64 cmTC_1afe0.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_1afe0.vcxproj -> C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ziqj16\\Debug\\cmTC_1afe0.exe
+          F:\\vsc\\product\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5py5ge\\Debug\\cmTC_461dc.exe" /INCREMENTAL /ILK:"cmTC_461dc.dir\\Debug\\cmTC_461dc.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-5py5ge/Debug/cmTC_461dc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-5py5ge/Debug/cmTC_461dc.lib" /MACHINE:X64  /machine:x64 cmTC_461dc.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_461dc.vcxproj -> C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5py5ge\\Debug\\cmTC_461dc.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_1afe0.dir\\Debug\\cmTC_1afe0.tlog\\unsuccessfulbuild".
-          Touching "cmTC_1afe0.dir\\Debug\\cmTC_1afe0.tlog\\cmTC_1afe0.lastbuildstate".
-        Done Building Project "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ziqj16\\cmTC_1afe0.vcxproj" (default targets).
+          Deleting file "cmTC_461dc.dir\\Debug\\cmTC_461dc.tlog\\unsuccessfulbuild".
+          Touching "cmTC_461dc.dir\\Debug\\cmTC_461dc.tlog\\cmTC_461dc.lastbuildstate".
+        Done Building Project "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5py5ge\\cmTC_461dc.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.45
+        Time Elapsed 00:00:00.43
         
       exitCode: 0
   -
@@ -1899,313 +1899,402 @@ events:
       Microsoft (R) Incremental Linker Version 14.42.34435.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
   -
-    kind: "find_package-v1"
+    kind: "find-v1"
     backtrace:
-      - "cpp/CMakeLists.txt:3 (find_package)"
-    name: "pybind11"
-    configs:
-      -
-        filename: "pybind11Config.cmake"
-        kind: "cmake"
-      -
-        filename: "pybind11-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
+      - "F:/cmake/share/cmake-4.1/Modules/FindPythonInterp.cmake:127 (find_program)"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/site-packages/pybind11/share/cmake/pybind11/FindPythonLibsNew.cmake:114 (find_package)"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Tools.cmake:44 (find_package)"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:226 (include)"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake:257 (include)"
+      - "cpp/CMakeLists.txt:16 (find_package)"
+    mode: "program"
+    variable: "PYTHON_EXECUTABLE"
+    description: "Path to a program."
     settings:
-      required: "required_explicit"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "pybind11"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "C:/Users/arya/desktop/ds_project/build/CMakeFiles/pkgRedirects/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/desktop/ds_project/build/CMakeFiles/pkgRedirects/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Python313/Scripts/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Python313/Scripts/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Python313/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Python313/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/.cargo/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/.cargo/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/AppData/Local/Microsoft/WindowsApps/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/AppData/Local/Microsoft/WindowsApps/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "F:/Microsoft VS Code/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "F:/Microsoft VS Code/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/AppData/Local/GitHubDesktop/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/AppData/Local/GitHubDesktop/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/AppData/Roaming/npm/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/AppData/Roaming/npm/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "G:/IntelliJ IDEA 2024.3.5/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "G:/IntelliJ IDEA 2024.3.5/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Python312/Scripts/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Python312/Scripts/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/AppData/Roaming/Python/Python312/Scripts/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/AppData/Roaming/Python/Python312/Scripts/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/go/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/go/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/PostgreSQL/17/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/PostgreSQL/17/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "F:/Applications/ffmpeg-7.1.1-essentials_build/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "F:/Applications/ffmpeg-7.1.1-essentials_build/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Go/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Go/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Git/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Git/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Git/cmd/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Git/cmd/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/nodejs/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/nodejs/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/ProgramData/chocolatey/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/ProgramData/chocolatey/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/WindowsPowerShell/v1.0/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/WindowsPowerShell/v1.0/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "F:/Applications/vcpkg/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "F:/Applications/vcpkg/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "F:/cmake/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "F:/cmake/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/AppData/Roaming/Python/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/AppData/Roaming/Python/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/AppData/Roaming/Python/Python313/Scripts/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/AppData/Roaming/Python/Python313/Scripts/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenSSH/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenSSH/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/AppData/Local/Programs/Ollama/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/arya/AppData/Local/Programs/Ollama/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "F:/CLion 2025.2.3/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "F:/CLion 2025.2.3/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "G:/PyCharm 2025.3/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "G:/PyCharm 2025.3/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "G:/WebStorm 2025.3.1/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "G:/WebStorm 2025.3.1/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/pybind11Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/pybind11-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-    found: null
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python3.8"
+      - "python3"
+    candidate_directories:
+      - "C:/Python313/Scripts/"
+      - "C:/Python313/"
+      - "C:/Users/arya/Desktop/DS_project/build/%PATH%/"
+      - "C:/ffmpeg/bin/"
+      - "C:/Users/arya/.cargo/bin/"
+      - "C:/Users/arya/AppData/Local/Microsoft/WindowsApps/"
+      - "F:/Microsoft VS Code/bin/"
+      - "C:/Users/arya/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/arya/AppData/Roaming/npm/"
+      - "G:/apache-maven-3.9.9/bin/"
+      - "G:/IntelliJ IDEA 2024.3.5/bin/"
+      - "C:/Program Files/Python312/Scripts/"
+      - "C:/Users/arya/AppData/Roaming/Python/Python312/Scripts/"
+      - "C:/Users/arya/go/bin/"
+      - "C:/Program Files/PostgreSQL/17/bin/"
+      - "F:/Applications/ffmpeg-7.1.1-essentials_build/bin/"
+      - "C:/Users/arya/go/"
+      - "C:/Program Files/Go/"
+      - "C:/Program Files/Go/bin/"
+      - "C:/Program Files/Git/"
+      - "C:/Program Files/Git/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/nodejs/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "F:/Applications/vcpkg/"
+      - "F:/cmake/bin/"
+      - "C:/Users/arya/Desktop/git/git-filter-repo/"
+      - "C:/Python313/python/"
+      - "C:/Users/arya/AppData/Roaming/Python/scripts/"
+      - "C:/Users/arya/AppData/Roaming/Python/Scripts/"
+      - "C:/Users/arya/AppData/Roaming/Python/"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/Scripts/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Users/arya/AppData/Local/Programs/Ollama/"
+      - "F:/CLion 2025.2.3/bin/"
+      - "G:/PyCharm 2025.3/bin/"
+      - "G:/WebStorm 2025.3.1/bin/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "F:/cmake/bin/"
+      - "F:/cmake/sbin/"
+      - "F:/cmake/"
+      - "C:/Program Files (x86)/DS_project/bin/"
+      - "C:/Program Files (x86)/DS_project/sbin/"
+      - "C:/Program Files (x86)/DS_project/"
+    searched_directories:
+      - "C:/Python313/Scripts/python3.8.com"
+      - "C:/Python313/Scripts/python3.8.exe"
+      - "C:/Python313/Scripts/python3.8"
+      - "C:/Python313/python3.8.com"
+      - "C:/Python313/python3.8.exe"
+      - "C:/Python313/python3.8"
+      - "C:/Users/arya/Desktop/DS_project/build/%PATH%/python3.8.com"
+      - "C:/Users/arya/Desktop/DS_project/build/%PATH%/python3.8.exe"
+      - "C:/Users/arya/Desktop/DS_project/build/%PATH%/python3.8"
+      - "C:/ffmpeg/bin/python3.8.com"
+      - "C:/ffmpeg/bin/python3.8.exe"
+      - "C:/ffmpeg/bin/python3.8"
+      - "C:/Users/arya/.cargo/bin/python3.8.com"
+      - "C:/Users/arya/.cargo/bin/python3.8.exe"
+      - "C:/Users/arya/.cargo/bin/python3.8"
+      - "C:/Users/arya/AppData/Local/Microsoft/WindowsApps/python3.8.com"
+      - "C:/Users/arya/AppData/Local/Microsoft/WindowsApps/python3.8.exe"
+      - "C:/Users/arya/AppData/Local/Microsoft/WindowsApps/python3.8"
+      - "F:/Microsoft VS Code/bin/python3.8.com"
+      - "F:/Microsoft VS Code/bin/python3.8.exe"
+      - "F:/Microsoft VS Code/bin/python3.8"
+      - "C:/Users/arya/AppData/Local/GitHubDesktop/bin/python3.8.com"
+      - "C:/Users/arya/AppData/Local/GitHubDesktop/bin/python3.8.exe"
+      - "C:/Users/arya/AppData/Local/GitHubDesktop/bin/python3.8"
+      - "C:/Users/arya/AppData/Roaming/npm/python3.8.com"
+      - "C:/Users/arya/AppData/Roaming/npm/python3.8.exe"
+      - "C:/Users/arya/AppData/Roaming/npm/python3.8"
+      - "G:/apache-maven-3.9.9/bin/python3.8.com"
+      - "G:/apache-maven-3.9.9/bin/python3.8.exe"
+      - "G:/apache-maven-3.9.9/bin/python3.8"
+      - "G:/IntelliJ IDEA 2024.3.5/bin/python3.8.com"
+      - "G:/IntelliJ IDEA 2024.3.5/bin/python3.8.exe"
+      - "G:/IntelliJ IDEA 2024.3.5/bin/python3.8"
+      - "C:/Program Files/Python312/Scripts/python3.8.com"
+      - "C:/Program Files/Python312/Scripts/python3.8.exe"
+      - "C:/Program Files/Python312/Scripts/python3.8"
+      - "C:/Users/arya/AppData/Roaming/Python/Python312/Scripts/python3.8.com"
+      - "C:/Users/arya/AppData/Roaming/Python/Python312/Scripts/python3.8.exe"
+      - "C:/Users/arya/AppData/Roaming/Python/Python312/Scripts/python3.8"
+      - "C:/Users/arya/go/bin/python3.8.com"
+      - "C:/Users/arya/go/bin/python3.8.exe"
+      - "C:/Users/arya/go/bin/python3.8"
+      - "C:/Program Files/PostgreSQL/17/bin/python3.8.com"
+      - "C:/Program Files/PostgreSQL/17/bin/python3.8.exe"
+      - "C:/Program Files/PostgreSQL/17/bin/python3.8"
+      - "F:/Applications/ffmpeg-7.1.1-essentials_build/bin/python3.8.com"
+      - "F:/Applications/ffmpeg-7.1.1-essentials_build/bin/python3.8.exe"
+      - "F:/Applications/ffmpeg-7.1.1-essentials_build/bin/python3.8"
+      - "C:/Users/arya/go/python3.8.com"
+      - "C:/Users/arya/go/python3.8.exe"
+      - "C:/Users/arya/go/python3.8"
+      - "C:/Program Files/Go/python3.8.com"
+      - "C:/Program Files/Go/python3.8.exe"
+      - "C:/Program Files/Go/python3.8"
+      - "C:/Program Files/Go/bin/python3.8.com"
+      - "C:/Program Files/Go/bin/python3.8.exe"
+      - "C:/Program Files/Go/bin/python3.8"
+      - "C:/Program Files/Git/python3.8.com"
+      - "C:/Program Files/Git/python3.8.exe"
+      - "C:/Program Files/Git/python3.8"
+      - "C:/Program Files/Git/bin/python3.8.com"
+      - "C:/Program Files/Git/bin/python3.8.exe"
+      - "C:/Program Files/Git/bin/python3.8"
+      - "C:/Program Files/Git/cmd/python3.8.com"
+      - "C:/Program Files/Git/cmd/python3.8.exe"
+      - "C:/Program Files/Git/cmd/python3.8"
+      - "C:/Program Files/nodejs/python3.8.com"
+      - "C:/Program Files/nodejs/python3.8.exe"
+      - "C:/Program Files/nodejs/python3.8"
+      - "C:/ProgramData/chocolatey/bin/python3.8.com"
+      - "C:/ProgramData/chocolatey/bin/python3.8.exe"
+      - "C:/ProgramData/chocolatey/bin/python3.8"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/python3.8.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/python3.8.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/python3.8"
+      - "C:/Windows/python3.8.com"
+      - "C:/Windows/python3.8.exe"
+      - "C:/Windows/python3.8"
+      - "C:/Windows/System32/python3.8.com"
+      - "C:/Windows/System32/python3.8.exe"
+      - "C:/Windows/System32/python3.8"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/python3.8.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/python3.8.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/python3.8"
+      - "F:/Applications/vcpkg/python3.8.com"
+      - "F:/Applications/vcpkg/python3.8.exe"
+      - "F:/Applications/vcpkg/python3.8"
+      - "F:/cmake/bin/python3.8.com"
+      - "F:/cmake/bin/python3.8.exe"
+      - "F:/cmake/bin/python3.8"
+      - "C:/Users/arya/Desktop/git/git-filter-repo/python3.8.com"
+      - "C:/Users/arya/Desktop/git/git-filter-repo/python3.8.exe"
+      - "C:/Users/arya/Desktop/git/git-filter-repo/python3.8"
+      - "C:/Python313/python/python3.8.com"
+      - "C:/Python313/python/python3.8.exe"
+      - "C:/Python313/python/python3.8"
+      - "C:/Users/arya/AppData/Roaming/Python/scripts/python3.8.com"
+      - "C:/Users/arya/AppData/Roaming/Python/scripts/python3.8.exe"
+      - "C:/Users/arya/AppData/Roaming/Python/scripts/python3.8"
+      - "C:/Users/arya/AppData/Roaming/Python/Scripts/python3.8.com"
+      - "C:/Users/arya/AppData/Roaming/Python/Scripts/python3.8.exe"
+      - "C:/Users/arya/AppData/Roaming/Python/Scripts/python3.8"
+      - "C:/Users/arya/AppData/Roaming/Python/python3.8.com"
+      - "C:/Users/arya/AppData/Roaming/Python/python3.8.exe"
+      - "C:/Users/arya/AppData/Roaming/Python/python3.8"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/Scripts/python3.8.com"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/Scripts/python3.8.exe"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/Scripts/python3.8"
+      - "C:/Windows/System32/OpenSSH/python3.8.com"
+      - "C:/Windows/System32/OpenSSH/python3.8.exe"
+      - "C:/Windows/System32/OpenSSH/python3.8"
+      - "C:/Users/arya/AppData/Local/Programs/Ollama/python3.8.com"
+      - "C:/Users/arya/AppData/Local/Programs/Ollama/python3.8.exe"
+      - "C:/Users/arya/AppData/Local/Programs/Ollama/python3.8"
+      - "F:/CLion 2025.2.3/bin/python3.8.com"
+      - "F:/CLion 2025.2.3/bin/python3.8.exe"
+      - "F:/CLion 2025.2.3/bin/python3.8"
+      - "G:/PyCharm 2025.3/bin/python3.8.com"
+      - "G:/PyCharm 2025.3/bin/python3.8.exe"
+      - "G:/PyCharm 2025.3/bin/python3.8"
+      - "G:/WebStorm 2025.3.1/bin/python3.8.com"
+      - "G:/WebStorm 2025.3.1/bin/python3.8.exe"
+      - "G:/WebStorm 2025.3.1/bin/python3.8"
+      - "C:/Program Files/bin/python3.8.com"
+      - "C:/Program Files/bin/python3.8.exe"
+      - "C:/Program Files/bin/python3.8"
+      - "C:/Program Files/sbin/python3.8.com"
+      - "C:/Program Files/sbin/python3.8.exe"
+      - "C:/Program Files/sbin/python3.8"
+      - "C:/Program Files/python3.8.com"
+      - "C:/Program Files/python3.8.exe"
+      - "C:/Program Files/python3.8"
+      - "C:/Program Files (x86)/bin/python3.8.com"
+      - "C:/Program Files (x86)/bin/python3.8.exe"
+      - "C:/Program Files (x86)/bin/python3.8"
+      - "C:/Program Files (x86)/sbin/python3.8.com"
+      - "C:/Program Files (x86)/sbin/python3.8.exe"
+      - "C:/Program Files (x86)/sbin/python3.8"
+      - "C:/Program Files (x86)/python3.8.com"
+      - "C:/Program Files (x86)/python3.8.exe"
+      - "C:/Program Files (x86)/python3.8"
+      - "F:/cmake/bin/python3.8.com"
+      - "F:/cmake/bin/python3.8.exe"
+      - "F:/cmake/bin/python3.8"
+      - "F:/cmake/sbin/python3.8.com"
+      - "F:/cmake/sbin/python3.8.exe"
+      - "F:/cmake/sbin/python3.8"
+      - "F:/cmake/python3.8.com"
+      - "F:/cmake/python3.8.exe"
+      - "F:/cmake/python3.8"
+      - "C:/Program Files (x86)/DS_project/bin/python3.8.com"
+      - "C:/Program Files (x86)/DS_project/bin/python3.8.exe"
+      - "C:/Program Files (x86)/DS_project/bin/python3.8"
+      - "C:/Program Files (x86)/DS_project/sbin/python3.8.com"
+      - "C:/Program Files (x86)/DS_project/sbin/python3.8.exe"
+      - "C:/Program Files (x86)/DS_project/sbin/python3.8"
+      - "C:/Program Files (x86)/DS_project/python3.8.com"
+      - "C:/Program Files (x86)/DS_project/python3.8.exe"
+      - "C:/Program Files (x86)/DS_project/python3.8"
+      - "C:/Python313/Scripts/python3.com"
+      - "C:/Python313/Scripts/python3.exe"
+      - "C:/Python313/Scripts/python3"
+      - "C:/Python313/python3.com"
+      - "C:/Python313/python3.exe"
+      - "C:/Python313/python3"
+      - "C:/Users/arya/Desktop/DS_project/build/%PATH%/python3.com"
+      - "C:/Users/arya/Desktop/DS_project/build/%PATH%/python3.exe"
+      - "C:/Users/arya/Desktop/DS_project/build/%PATH%/python3"
+      - "C:/ffmpeg/bin/python3.com"
+      - "C:/ffmpeg/bin/python3.exe"
+      - "C:/ffmpeg/bin/python3"
+      - "C:/Users/arya/.cargo/bin/python3.com"
+      - "C:/Users/arya/.cargo/bin/python3.exe"
+      - "C:/Users/arya/.cargo/bin/python3"
+      - "C:/Users/arya/AppData/Local/Microsoft/WindowsApps/python3.com"
+      - "C:/Users/arya/AppData/Local/Microsoft/WindowsApps/python3.exe"
+      - "C:/Users/arya/AppData/Local/Microsoft/WindowsApps/python3"
+      - "F:/Microsoft VS Code/bin/python3.com"
+      - "F:/Microsoft VS Code/bin/python3.exe"
+      - "F:/Microsoft VS Code/bin/python3"
+      - "C:/Users/arya/AppData/Local/GitHubDesktop/bin/python3.com"
+      - "C:/Users/arya/AppData/Local/GitHubDesktop/bin/python3.exe"
+      - "C:/Users/arya/AppData/Local/GitHubDesktop/bin/python3"
+      - "C:/Users/arya/AppData/Roaming/npm/python3.com"
+      - "C:/Users/arya/AppData/Roaming/npm/python3.exe"
+      - "C:/Users/arya/AppData/Roaming/npm/python3"
+      - "G:/apache-maven-3.9.9/bin/python3.com"
+      - "G:/apache-maven-3.9.9/bin/python3.exe"
+      - "G:/apache-maven-3.9.9/bin/python3"
+      - "G:/IntelliJ IDEA 2024.3.5/bin/python3.com"
+      - "G:/IntelliJ IDEA 2024.3.5/bin/python3.exe"
+      - "G:/IntelliJ IDEA 2024.3.5/bin/python3"
+      - "C:/Program Files/Python312/Scripts/python3.com"
+      - "C:/Program Files/Python312/Scripts/python3.exe"
+      - "C:/Program Files/Python312/Scripts/python3"
+      - "C:/Users/arya/AppData/Roaming/Python/Python312/Scripts/python3.com"
+      - "C:/Users/arya/AppData/Roaming/Python/Python312/Scripts/python3.exe"
+      - "C:/Users/arya/AppData/Roaming/Python/Python312/Scripts/python3"
+      - "C:/Users/arya/go/bin/python3.com"
+      - "C:/Users/arya/go/bin/python3.exe"
+      - "C:/Users/arya/go/bin/python3"
+      - "C:/Program Files/PostgreSQL/17/bin/python3.com"
+      - "C:/Program Files/PostgreSQL/17/bin/python3.exe"
+      - "C:/Program Files/PostgreSQL/17/bin/python3"
+      - "F:/Applications/ffmpeg-7.1.1-essentials_build/bin/python3.com"
+      - "F:/Applications/ffmpeg-7.1.1-essentials_build/bin/python3.exe"
+      - "F:/Applications/ffmpeg-7.1.1-essentials_build/bin/python3"
+      - "C:/Users/arya/go/python3.com"
+      - "C:/Users/arya/go/python3.exe"
+      - "C:/Users/arya/go/python3"
+      - "C:/Program Files/Go/python3.com"
+      - "C:/Program Files/Go/python3.exe"
+      - "C:/Program Files/Go/python3"
+      - "C:/Program Files/Go/bin/python3.com"
+      - "C:/Program Files/Go/bin/python3.exe"
+      - "C:/Program Files/Go/bin/python3"
+      - "C:/Program Files/Git/python3.com"
+      - "C:/Program Files/Git/python3.exe"
+      - "C:/Program Files/Git/python3"
+      - "C:/Program Files/Git/bin/python3.com"
+      - "C:/Program Files/Git/bin/python3.exe"
+      - "C:/Program Files/Git/bin/python3"
+      - "C:/Program Files/Git/cmd/python3.com"
+      - "C:/Program Files/Git/cmd/python3.exe"
+      - "C:/Program Files/Git/cmd/python3"
+      - "C:/Program Files/nodejs/python3.com"
+      - "C:/Program Files/nodejs/python3.exe"
+      - "C:/Program Files/nodejs/python3"
+      - "C:/ProgramData/chocolatey/bin/python3.com"
+      - "C:/ProgramData/chocolatey/bin/python3.exe"
+      - "C:/ProgramData/chocolatey/bin/python3"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/python3.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/python3.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/python3"
+      - "C:/Windows/python3.com"
+      - "C:/Windows/python3.exe"
+      - "C:/Windows/python3"
+      - "C:/Windows/System32/python3.com"
+      - "C:/Windows/System32/python3.exe"
+      - "C:/Windows/System32/python3"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/python3.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/python3.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/python3"
+      - "F:/Applications/vcpkg/python3.com"
+      - "F:/Applications/vcpkg/python3.exe"
+      - "F:/Applications/vcpkg/python3"
+      - "F:/cmake/bin/python3.com"
+      - "F:/cmake/bin/python3.exe"
+      - "F:/cmake/bin/python3"
+      - "C:/Users/arya/Desktop/git/git-filter-repo/python3.com"
+      - "C:/Users/arya/Desktop/git/git-filter-repo/python3.exe"
+      - "C:/Users/arya/Desktop/git/git-filter-repo/python3"
+      - "C:/Python313/python/python3.com"
+      - "C:/Python313/python/python3.exe"
+      - "C:/Python313/python/python3"
+      - "C:/Users/arya/AppData/Roaming/Python/scripts/python3.com"
+      - "C:/Users/arya/AppData/Roaming/Python/scripts/python3.exe"
+      - "C:/Users/arya/AppData/Roaming/Python/scripts/python3"
+      - "C:/Users/arya/AppData/Roaming/Python/Scripts/python3.com"
+      - "C:/Users/arya/AppData/Roaming/Python/Scripts/python3.exe"
+      - "C:/Users/arya/AppData/Roaming/Python/Scripts/python3"
+      - "C:/Users/arya/AppData/Roaming/Python/python3.com"
+      - "C:/Users/arya/AppData/Roaming/Python/python3.exe"
+      - "C:/Users/arya/AppData/Roaming/Python/python3"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/Scripts/python3.com"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/Scripts/python3.exe"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/Scripts/python3"
+      - "C:/Windows/System32/OpenSSH/python3.com"
+      - "C:/Windows/System32/OpenSSH/python3.exe"
+      - "C:/Windows/System32/OpenSSH/python3"
+      - "C:/Users/arya/AppData/Local/Programs/Ollama/python3.com"
+      - "C:/Users/arya/AppData/Local/Programs/Ollama/python3.exe"
+      - "C:/Users/arya/AppData/Local/Programs/Ollama/python3"
+      - "F:/CLion 2025.2.3/bin/python3.com"
+      - "F:/CLion 2025.2.3/bin/python3.exe"
+      - "F:/CLion 2025.2.3/bin/python3"
+      - "G:/PyCharm 2025.3/bin/python3.com"
+      - "G:/PyCharm 2025.3/bin/python3.exe"
+      - "G:/PyCharm 2025.3/bin/python3"
+      - "G:/WebStorm 2025.3.1/bin/python3.com"
+      - "G:/WebStorm 2025.3.1/bin/python3.exe"
+      - "G:/WebStorm 2025.3.1/bin/python3"
+      - "C:/Program Files/bin/python3.com"
+      - "C:/Program Files/bin/python3.exe"
+      - "C:/Program Files/bin/python3"
+      - "C:/Program Files/sbin/python3.com"
+      - "C:/Program Files/sbin/python3.exe"
+      - "C:/Program Files/sbin/python3"
+      - "C:/Program Files/python3.com"
+      - "C:/Program Files/python3.exe"
+      - "C:/Program Files/python3"
+      - "C:/Program Files (x86)/bin/python3.com"
+      - "C:/Program Files (x86)/bin/python3.exe"
+      - "C:/Program Files (x86)/bin/python3"
+      - "C:/Program Files (x86)/sbin/python3.com"
+      - "C:/Program Files (x86)/sbin/python3.exe"
+      - "C:/Program Files (x86)/sbin/python3"
+      - "C:/Program Files (x86)/python3.com"
+      - "C:/Program Files (x86)/python3.exe"
+      - "C:/Program Files (x86)/python3"
+      - "F:/cmake/bin/python3.com"
+      - "F:/cmake/bin/python3.exe"
+      - "F:/cmake/bin/python3"
+      - "F:/cmake/sbin/python3.com"
+      - "F:/cmake/sbin/python3.exe"
+      - "F:/cmake/sbin/python3"
+      - "F:/cmake/python3.com"
+      - "F:/cmake/python3.exe"
+      - "F:/cmake/python3"
+      - "C:/Program Files (x86)/DS_project/bin/python3.com"
+      - "C:/Program Files (x86)/DS_project/bin/python3.exe"
+      - "C:/Program Files (x86)/DS_project/bin/python3"
+      - "C:/Program Files (x86)/DS_project/sbin/python3.com"
+      - "C:/Program Files (x86)/DS_project/sbin/python3.exe"
+      - "C:/Program Files (x86)/DS_project/sbin/python3"
+      - "C:/Program Files (x86)/DS_project/python3.com"
+      - "C:/Program Files (x86)/DS_project/python3.exe"
+      - "C:/Program Files (x86)/DS_project/python3"
+    found: false
     search_context:
       ENV{PATH}:
         - "C:\\Python313\\Scripts\\"
@@ -2273,4 +2362,390 @@ events:
         - "C:/Program Files (x86)"
         - "F:/cmake"
         - "C:/Program Files (x86)/DS_project"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "F:/cmake/share/cmake-4.1/Modules/FindPythonInterp.cmake:157 (find_program)"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/site-packages/pybind11/share/cmake/pybind11/FindPythonLibsNew.cmake:114 (find_package)"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Tools.cmake:44 (find_package)"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:226 (include)"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake:257 (include)"
+      - "cpp/CMakeLists.txt:16 (find_package)"
+    mode: "program"
+    variable: "PYTHON_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python3.12"
+      - "python"
+    candidate_directories:
+      - "C:/Python313/Scripts/"
+      - "C:/Python313/"
+      - "C:/Users/arya/Desktop/DS_project/build/%PATH%/"
+      - "C:/ffmpeg/bin/"
+      - "C:/Users/arya/.cargo/bin/"
+      - "C:/Users/arya/AppData/Local/Microsoft/WindowsApps/"
+      - "F:/Microsoft VS Code/bin/"
+      - "C:/Users/arya/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/arya/AppData/Roaming/npm/"
+      - "G:/apache-maven-3.9.9/bin/"
+      - "G:/IntelliJ IDEA 2024.3.5/bin/"
+      - "C:/Program Files/Python312/Scripts/"
+      - "C:/Users/arya/AppData/Roaming/Python/Python312/Scripts/"
+      - "C:/Users/arya/go/bin/"
+      - "C:/Program Files/PostgreSQL/17/bin/"
+      - "F:/Applications/ffmpeg-7.1.1-essentials_build/bin/"
+      - "C:/Users/arya/go/"
+      - "C:/Program Files/Go/"
+      - "C:/Program Files/Go/bin/"
+      - "C:/Program Files/Git/"
+      - "C:/Program Files/Git/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/nodejs/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "F:/Applications/vcpkg/"
+      - "F:/cmake/bin/"
+      - "C:/Users/arya/Desktop/git/git-filter-repo/"
+      - "C:/Python313/python/"
+      - "C:/Users/arya/AppData/Roaming/Python/scripts/"
+      - "C:/Users/arya/AppData/Roaming/Python/Scripts/"
+      - "C:/Users/arya/AppData/Roaming/Python/"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/Scripts/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Users/arya/AppData/Local/Programs/Ollama/"
+      - "F:/CLion 2025.2.3/bin/"
+      - "G:/PyCharm 2025.3/bin/"
+      - "G:/WebStorm 2025.3.1/bin/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "F:/cmake/bin/"
+      - "F:/cmake/sbin/"
+      - "F:/cmake/"
+      - "C:/Program Files (x86)/DS_project/bin/"
+      - "C:/Program Files (x86)/DS_project/sbin/"
+      - "C:/Program Files (x86)/DS_project/"
+      - "C:/Program Files/Python312/"
+      - "/REGISTRY-NOTFOUND/"
+    searched_directories:
+      - "C:/Python313/Scripts/python3.12.com"
+      - "C:/Python313/Scripts/python3.12.exe"
+      - "C:/Python313/Scripts/python3.12"
+      - "C:/Python313/python3.12.com"
+      - "C:/Python313/python3.12.exe"
+      - "C:/Python313/python3.12"
+      - "C:/Users/arya/Desktop/DS_project/build/%PATH%/python3.12.com"
+      - "C:/Users/arya/Desktop/DS_project/build/%PATH%/python3.12.exe"
+      - "C:/Users/arya/Desktop/DS_project/build/%PATH%/python3.12"
+      - "C:/ffmpeg/bin/python3.12.com"
+      - "C:/ffmpeg/bin/python3.12.exe"
+      - "C:/ffmpeg/bin/python3.12"
+      - "C:/Users/arya/.cargo/bin/python3.12.com"
+      - "C:/Users/arya/.cargo/bin/python3.12.exe"
+      - "C:/Users/arya/.cargo/bin/python3.12"
+      - "C:/Users/arya/AppData/Local/Microsoft/WindowsApps/python3.12.com"
+      - "C:/Users/arya/AppData/Local/Microsoft/WindowsApps/python3.12.exe"
+      - "C:/Users/arya/AppData/Local/Microsoft/WindowsApps/python3.12"
+      - "F:/Microsoft VS Code/bin/python3.12.com"
+      - "F:/Microsoft VS Code/bin/python3.12.exe"
+      - "F:/Microsoft VS Code/bin/python3.12"
+      - "C:/Users/arya/AppData/Local/GitHubDesktop/bin/python3.12.com"
+      - "C:/Users/arya/AppData/Local/GitHubDesktop/bin/python3.12.exe"
+      - "C:/Users/arya/AppData/Local/GitHubDesktop/bin/python3.12"
+      - "C:/Users/arya/AppData/Roaming/npm/python3.12.com"
+      - "C:/Users/arya/AppData/Roaming/npm/python3.12.exe"
+      - "C:/Users/arya/AppData/Roaming/npm/python3.12"
+      - "G:/apache-maven-3.9.9/bin/python3.12.com"
+      - "G:/apache-maven-3.9.9/bin/python3.12.exe"
+      - "G:/apache-maven-3.9.9/bin/python3.12"
+      - "G:/IntelliJ IDEA 2024.3.5/bin/python3.12.com"
+      - "G:/IntelliJ IDEA 2024.3.5/bin/python3.12.exe"
+      - "G:/IntelliJ IDEA 2024.3.5/bin/python3.12"
+      - "C:/Program Files/Python312/Scripts/python3.12.com"
+      - "C:/Program Files/Python312/Scripts/python3.12.exe"
+      - "C:/Program Files/Python312/Scripts/python3.12"
+      - "C:/Users/arya/AppData/Roaming/Python/Python312/Scripts/python3.12.com"
+      - "C:/Users/arya/AppData/Roaming/Python/Python312/Scripts/python3.12.exe"
+      - "C:/Users/arya/AppData/Roaming/Python/Python312/Scripts/python3.12"
+      - "C:/Users/arya/go/bin/python3.12.com"
+      - "C:/Users/arya/go/bin/python3.12.exe"
+      - "C:/Users/arya/go/bin/python3.12"
+      - "C:/Program Files/PostgreSQL/17/bin/python3.12.com"
+      - "C:/Program Files/PostgreSQL/17/bin/python3.12.exe"
+      - "C:/Program Files/PostgreSQL/17/bin/python3.12"
+      - "F:/Applications/ffmpeg-7.1.1-essentials_build/bin/python3.12.com"
+      - "F:/Applications/ffmpeg-7.1.1-essentials_build/bin/python3.12.exe"
+      - "F:/Applications/ffmpeg-7.1.1-essentials_build/bin/python3.12"
+      - "C:/Users/arya/go/python3.12.com"
+      - "C:/Users/arya/go/python3.12.exe"
+      - "C:/Users/arya/go/python3.12"
+      - "C:/Program Files/Go/python3.12.com"
+      - "C:/Program Files/Go/python3.12.exe"
+      - "C:/Program Files/Go/python3.12"
+      - "C:/Program Files/Go/bin/python3.12.com"
+      - "C:/Program Files/Go/bin/python3.12.exe"
+      - "C:/Program Files/Go/bin/python3.12"
+      - "C:/Program Files/Git/python3.12.com"
+      - "C:/Program Files/Git/python3.12.exe"
+      - "C:/Program Files/Git/python3.12"
+      - "C:/Program Files/Git/bin/python3.12.com"
+      - "C:/Program Files/Git/bin/python3.12.exe"
+      - "C:/Program Files/Git/bin/python3.12"
+      - "C:/Program Files/Git/cmd/python3.12.com"
+      - "C:/Program Files/Git/cmd/python3.12.exe"
+      - "C:/Program Files/Git/cmd/python3.12"
+      - "C:/Program Files/nodejs/python3.12.com"
+      - "C:/Program Files/nodejs/python3.12.exe"
+      - "C:/Program Files/nodejs/python3.12"
+      - "C:/ProgramData/chocolatey/bin/python3.12.com"
+      - "C:/ProgramData/chocolatey/bin/python3.12.exe"
+      - "C:/ProgramData/chocolatey/bin/python3.12"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/python3.12.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/python3.12.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/python3.12"
+      - "C:/Windows/python3.12.com"
+      - "C:/Windows/python3.12.exe"
+      - "C:/Windows/python3.12"
+      - "C:/Windows/System32/python3.12.com"
+      - "C:/Windows/System32/python3.12.exe"
+      - "C:/Windows/System32/python3.12"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/python3.12.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/python3.12.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/python3.12"
+      - "F:/Applications/vcpkg/python3.12.com"
+      - "F:/Applications/vcpkg/python3.12.exe"
+      - "F:/Applications/vcpkg/python3.12"
+      - "F:/cmake/bin/python3.12.com"
+      - "F:/cmake/bin/python3.12.exe"
+      - "F:/cmake/bin/python3.12"
+      - "C:/Users/arya/Desktop/git/git-filter-repo/python3.12.com"
+      - "C:/Users/arya/Desktop/git/git-filter-repo/python3.12.exe"
+      - "C:/Users/arya/Desktop/git/git-filter-repo/python3.12"
+      - "C:/Python313/python/python3.12.com"
+      - "C:/Python313/python/python3.12.exe"
+      - "C:/Python313/python/python3.12"
+      - "C:/Users/arya/AppData/Roaming/Python/scripts/python3.12.com"
+      - "C:/Users/arya/AppData/Roaming/Python/scripts/python3.12.exe"
+      - "C:/Users/arya/AppData/Roaming/Python/scripts/python3.12"
+      - "C:/Users/arya/AppData/Roaming/Python/Scripts/python3.12.com"
+      - "C:/Users/arya/AppData/Roaming/Python/Scripts/python3.12.exe"
+      - "C:/Users/arya/AppData/Roaming/Python/Scripts/python3.12"
+      - "C:/Users/arya/AppData/Roaming/Python/python3.12.com"
+      - "C:/Users/arya/AppData/Roaming/Python/python3.12.exe"
+      - "C:/Users/arya/AppData/Roaming/Python/python3.12"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/Scripts/python3.12.com"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/Scripts/python3.12.exe"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/Scripts/python3.12"
+      - "C:/Windows/System32/OpenSSH/python3.12.com"
+      - "C:/Windows/System32/OpenSSH/python3.12.exe"
+      - "C:/Windows/System32/OpenSSH/python3.12"
+      - "C:/Users/arya/AppData/Local/Programs/Ollama/python3.12.com"
+      - "C:/Users/arya/AppData/Local/Programs/Ollama/python3.12.exe"
+      - "C:/Users/arya/AppData/Local/Programs/Ollama/python3.12"
+      - "F:/CLion 2025.2.3/bin/python3.12.com"
+      - "F:/CLion 2025.2.3/bin/python3.12.exe"
+      - "F:/CLion 2025.2.3/bin/python3.12"
+      - "G:/PyCharm 2025.3/bin/python3.12.com"
+      - "G:/PyCharm 2025.3/bin/python3.12.exe"
+      - "G:/PyCharm 2025.3/bin/python3.12"
+      - "G:/WebStorm 2025.3.1/bin/python3.12.com"
+      - "G:/WebStorm 2025.3.1/bin/python3.12.exe"
+      - "G:/WebStorm 2025.3.1/bin/python3.12"
+      - "C:/Program Files/bin/python3.12.com"
+      - "C:/Program Files/bin/python3.12.exe"
+      - "C:/Program Files/bin/python3.12"
+      - "C:/Program Files/sbin/python3.12.com"
+      - "C:/Program Files/sbin/python3.12.exe"
+      - "C:/Program Files/sbin/python3.12"
+      - "C:/Program Files/python3.12.com"
+      - "C:/Program Files/python3.12.exe"
+      - "C:/Program Files/python3.12"
+      - "C:/Program Files (x86)/bin/python3.12.com"
+      - "C:/Program Files (x86)/bin/python3.12.exe"
+      - "C:/Program Files (x86)/bin/python3.12"
+      - "C:/Program Files (x86)/sbin/python3.12.com"
+      - "C:/Program Files (x86)/sbin/python3.12.exe"
+      - "C:/Program Files (x86)/sbin/python3.12"
+      - "C:/Program Files (x86)/python3.12.com"
+      - "C:/Program Files (x86)/python3.12.exe"
+      - "C:/Program Files (x86)/python3.12"
+      - "F:/cmake/bin/python3.12.com"
+      - "F:/cmake/bin/python3.12.exe"
+      - "F:/cmake/bin/python3.12"
+      - "F:/cmake/sbin/python3.12.com"
+      - "F:/cmake/sbin/python3.12.exe"
+      - "F:/cmake/sbin/python3.12"
+      - "F:/cmake/python3.12.com"
+      - "F:/cmake/python3.12.exe"
+      - "F:/cmake/python3.12"
+      - "C:/Program Files (x86)/DS_project/bin/python3.12.com"
+      - "C:/Program Files (x86)/DS_project/bin/python3.12.exe"
+      - "C:/Program Files (x86)/DS_project/bin/python3.12"
+      - "C:/Program Files (x86)/DS_project/sbin/python3.12.com"
+      - "C:/Program Files (x86)/DS_project/sbin/python3.12.exe"
+      - "C:/Program Files (x86)/DS_project/sbin/python3.12"
+      - "C:/Program Files (x86)/DS_project/python3.12.com"
+      - "C:/Program Files (x86)/DS_project/python3.12.exe"
+      - "C:/Program Files (x86)/DS_project/python3.12"
+      - "C:/Program Files/Python312/python3.12.com"
+      - "C:/Program Files/Python312/python3.12.exe"
+      - "C:/Program Files/Python312/python3.12"
+      - "/REGISTRY-NOTFOUND/python3.12.com"
+      - "/REGISTRY-NOTFOUND/python3.12.exe"
+      - "/REGISTRY-NOTFOUND/python3.12"
+      - "C:/Python313/Scripts/python.com"
+      - "C:/Python313/Scripts/python.exe"
+      - "C:/Python313/Scripts/python"
+      - "C:/Python313/python.com"
+    found: "C:/Python313/python.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Python313\\Scripts\\"
+        - "C:\\Python313\\"
+        - "%PATH%"
+        - "C:\\ffmpeg\\bin"
+        - "C:\\Users\\arya\\.cargo\\bin"
+        - "C:\\Users\\arya\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "F:\\Microsoft VS Code\\bin"
+        - "C:\\Users\\arya\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\arya\\AppData\\Roaming\\npm"
+        - "G:\\apache-maven-3.9.9\\bin"
+        - "G:\\IntelliJ IDEA 2024.3.5\\bin"
+        - "C:\\Program Files\\Python312\\Scripts"
+        - "C:\\Users\\arya\\AppData\\Roaming\\Python\\Python312\\Scripts"
+        - "C:\\Users\\arya\\go\\bin"
+        - "C:\\Program Files\\PostgreSQL\\17\\bin"
+        - "C:\\ffmpeg\\bin"
+        - "F:\\Applications\\ffmpeg-7.1.1-essentials_build\\bin"
+        - "C:\\Users\\arya\\go"
+        - "C:\\Program Files\\Go"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\Git"
+        - "C:\\Program Files\\Git\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\nodejs"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "F:\\Applications\\vcpkg"
+        - "F:\\cmake\\bin"
+        - "C:\\Users\\arya\\Desktop\\git\\git-filter-repo"
+        - "C:\\Python313\\python"
+        - "C:\\Users\\arya\\AppData\\Roaming\\Python\\scripts"
+        - "C:\\Users\\arya\\AppData\\Roaming\\Python\\Scripts"
+        - "C:\\Users\\arya\\AppData\\Roaming\\Python"
+        - "C:\\Users\\arya\\AppData\\Roaming\\Python\\Python313\\Scripts"
+        - "C:\\Users\\arya\\AppData\\Roaming\\Python\\Python312\\Scripts"
+        - "C:\\Windows\\System32\\OpenSSH"
+        - "C:\\Users\\arya\\.cargo\\bin"
+        - "C:\\Users\\arya\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "F:\\Microsoft VS Code\\bin"
+        - "C:\\Users\\arya\\AppData\\Local\\GitHubDesktop\\bin"
+        - "G:\\apache-maven-3.9.9\\bin"
+        - "G:\\IntelliJ IDEA 2024.3.5\\bin"
+        - "C:\\Program Files\\Python312\\Scripts"
+        - "C:\\Users\\arya\\AppData\\Roaming\\Python\\Python312\\Scripts"
+        - "C:\\Users\\arya\\go\\bin"
+        - "C:\\Program Files\\PostgreSQL\\17\\bin"
+        - "C:\\Users\\arya\\go"
+        - "C:\\Users\\arya\\go\\bin"
+        - "C:\\Program Files\\Go"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Users\\arya\\AppData\\Roaming\\npm"
+        - "C:\\Users\\arya\\AppData\\Local\\Programs\\Ollama"
+        - "F:\\CLion 2025.2.3\\bin"
+        - "G:\\PyCharm 2025.3\\bin"
+        - "G:\\WebStorm 2025.3.1\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/DS_project"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "F:/cmake"
+        - "C:/Program Files (x86)/DS_project"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "F:/cmake/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "F:/cmake/share/cmake-4.1/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "F:/cmake/share/cmake-4.1/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:321 (check_cxx_compiler_flag)"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:393 (_pybind11_return_if_cxx_and_linker_flags_work)"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:427 (_pybind11_generate_lto)"
+      - "C:/Users/arya/AppData/Roaming/Python/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake:257 (include)"
+      - "cpp/CMakeLists.txt:16 (find_package)"
+    checks:
+      - "Performing Test HAS_MSVC_GL_LTCG"
+    directories:
+      source: "C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-sbmbv6"
+      binary: "C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-sbmbv6"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: ""
+    buildResult:
+      variable: "HAS_MSVC_GL_LTCG"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-sbmbv6'
+        
+        Run Build Command(s): F:/vsc/product/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_925e6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.12.6+db5f6012c for .NET Framework
+        Build started 2/1/2026 1:10:52 AM.
+        
+        Project "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sbmbv6\\cmTC_925e6.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_925e6.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sbmbv6\\Debug\\".
+          Creating directory "cmTC_925e6.dir\\Debug\\cmTC_925e6.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_925e6.dir\\Debug\\cmTC_925e6.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_925e6.dir\\Debug\\cmTC_925e6.tlog\\unsuccessfulbuild".
+        ClCompile:
+          F:\\vsc\\product\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /std:c++20 /Fo"cmTC_925e6.dir\\Debug\\\\" /Fd"cmTC_925e6.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sbmbv6\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /std:c++20 /Fo"cmTC_925e6.dir\\Debug\\\\" /Fd"cmTC_925e6.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sbmbv6\\src.cxx"
+          src.cxx
+        Link:
+          F:\\vsc\\product\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sbmbv6\\Debug\\cmTC_925e6.exe" /INCREMENTAL /ILK:"cmTC_925e6.dir\\Debug\\cmTC_925e6.ilk" /NOLOGO "-LTCG" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-sbmbv6/Debug/cmTC_925e6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/arya/desktop/ds_project/build/CMakeFiles/CMakeScratch/TryCompile-sbmbv6/Debug/cmTC_925e6.lib" /MACHINE:X64  /machine:x64 cmTC_925e6.dir\\Debug\\src.obj
+        LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sbmbv6\\cmTC_925e6.vcxproj]
+          Generating code
+          Finished generating code
+          cmTC_925e6.vcxproj -> C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sbmbv6\\Debug\\cmTC_925e6.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_925e6.dir\\Debug\\cmTC_925e6.tlog\\unsuccessfulbuild".
+          Touching "cmTC_925e6.dir\\Debug\\cmTC_925e6.tlog\\cmTC_925e6.lastbuildstate".
+        Done Building Project "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sbmbv6\\cmTC_925e6.vcxproj" (default targets).
+        
+        Build succeeded.
+        
+        "C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sbmbv6\\cmTC_925e6.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\arya\\desktop\\ds_project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sbmbv6\\cmTC_925e6.vcxproj]
+        
+            1 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.49
+        
+      exitCode: 0
 ...

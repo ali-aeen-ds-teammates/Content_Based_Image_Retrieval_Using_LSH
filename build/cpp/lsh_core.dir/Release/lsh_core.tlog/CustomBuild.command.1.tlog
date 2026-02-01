@@ -1,0 +1,10 @@
+^C:\USERS\ARYA\DESKTOP\DS_PROJECT\CPP\CMAKELISTS.TXT
+setlocal
+F:\cmake\bin\cmake.exe -SC:/Users/arya/Desktop/DS_project -BC:/Users/arya/desktop/ds_project/build --check-stamp-file C:/Users/arya/desktop/ds_project/build/cpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
