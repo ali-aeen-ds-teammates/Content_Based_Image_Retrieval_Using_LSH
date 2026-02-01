@@ -1,0 +1,59 @@
+# --- C++ / CMake ---
+cpp/build/
+cpp/bin/
+cpp/out/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.pyd
+*.lib
+*.pdb
+.cmake/
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+Makefile
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+ENV/
+.pytest_cache/
+.ipynb_checkpoints/
+# Ignore generated performance reports
+python/*.xlsx
+python/query.jpg
+
+# --- Node / React ---
+ui_react/node_modules/
+ui_react/dist/
+ui_react/dist-ssr/
+ui_react/*.local
+.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Project Specific Data ---
+# We ignore the actual binary database and images to keep the repo small
+# The team should download the dataset separately
+python/data/vectors.bin
+python/data/metadata.json
+python/data/256_ObjectCategories/
+
+# --- IDEs / OS ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
