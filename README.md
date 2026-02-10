@@ -2,6 +2,10 @@
 
 This project implements a high-performance Content-Based Image Retrieval (CBIR) system featuring a custom-built Vector Database in C++ with LSH indexing and a React/FastAPI frontend.
 
+<img width="1280" height="590" alt="image" src="https://github.com/user-attachments/assets/1e00199a-9eba-4518-8f11-c2de780dd931" />
+<img width="1280" height="584" alt="image" src="https://github.com/user-attachments/assets/4961ef28-06ab-4b2b-9f08-0e753321c6ec" />
+
+
 ## 1. Prerequisites
 
 ### Windows
