@@ -53,6 +53,8 @@ yarn-error.log*
 python/data/vectors.bin
 python/data/metadata.json
 python/data/256_ObjectCategories/
+*.pyd
+*.so
 
 # --- IDEs / OS ---
 .vscode/
